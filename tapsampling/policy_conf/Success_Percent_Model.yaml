@@ -1,0 +1,12 @@
+defaults:
+  - datamodule: calvin_success_percentage
+
+root_data_dir: /tmp/calvin/task_ABC_D
+lang_folder: lang_clip_resnet50
+min_window_size: 21
+max_window_size: 50
+batch_size: 1
+window_sampling_strategy: geometric
+num_workers: 1
+act_seq_len: 10
+obs_seq_len: 1

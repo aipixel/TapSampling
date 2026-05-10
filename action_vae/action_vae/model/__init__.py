@@ -1,0 +1,1 @@
+"""Standalone model components."""

@@ -1,0 +1,57 @@
+2026-05-06 10:39:46.675564: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-06 10:39:46.723021: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-05-06 10:39:46.723064: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-05-06 10:39:46.724449: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2026-05-06 10:39:46.731424: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-06 10:39:47.559233: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/opt/conda/envs/taps2/lib/python3.10/site-packages/torchvision/datapoints/__init__.py:12: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+/opt/conda/envs/taps2/lib/python3.10/site-packages/torchvision/transforms/v2/__init__.py:54: UserWarning: The torchvision.datapoints and torchvision.transforms.v2 namespaces are still Beta. While we do not expect major breaking changes, some APIs may still change according to user feedback. Please submit any feedback you may have in this issue: https://github.com/pytorch/vision/issues/6753, and you can also check out https://github.com/pytorch/vision/issues/7319 to learn more about the APIs that we suspect might involve future changes. You can silence this warning by calling torchvision.disable_beta_transforms_warning().
+  warnings.warn(_BETA_TRANSFORMS_WARNING)
+cmd_args vla-scripts/verifier_server.py --pretrained_checkpoint /home/sizhe/video-prediction-policy/external_toolkits/vla-adapter/outputs_actiondim7/configs+calvin_abc+b16+lr-1e-05+lora-r64+dropout-0.0--image_aug--vla-adapter--calvin--actiondim7--65000_chkpt --calvin_path /home/sizhe/video-prediction-policy/calvin
+Using CALVIN constants:
+  NUM_ACTIONS_CHUNK = 10
+  ACTION_DIM = 7
+  PROPRIO_DIM = 8
+  ACTION_PROPRIO_NORMALIZATION_TYPE = bounds_q99
+If needed, manually set the correct constants in `prismatic/vla/constants.py`!
+Server_Config: GenerateConfig(model_family='openvla', pretrained_checkpoint='/home/sizhe/video-prediction-policy/external_toolkits/VLA-Adapter/outputs_actiondim7/configs+calvin_abc+b16+lr-1e-05+lora-r64+dropout-0.0--image_aug--VLA-Adapter--calvin--actiondim7--65000_chkpt', use_minivla=False, use_l1_regression=True, use_x0_prediction=False, use_film=False, num_images_in_input=2, use_proprio=False, load_in_8bit=False, load_in_4bit=False, center_crop=False, num_open_loop_steps=8, unnorm_key='', calvin_path='/home/sizhe/video-prediction-policy/calvin', log_dir='log', with_depth=False, with_gripper=True, with_cfg=True, enrich_lang=False, run_id_note=None, local_log_dir='./experiments/logs', use_wandb=False, wandb_entity='your-wandb-entity', wandb_project='your-wandb-project', seed=7, save_version='Pro')
+Instantiating pretrained VLA policy...
+Model is not on HF Hub, loading from local checkpoint: /home/sizhe/video-prediction-policy/external_toolkits/VLA-Adapter/outputs_actiondim7/configs+calvin_abc+b16+lr-1e-05+lora-r64+dropout-0.0--image_aug--VLA-Adapter--calvin--actiondim7--65000_chkpt
+Created backup of original config at: /home/sizhe/video-prediction-policy/external_toolkits/VLA-Adapter/outputs_actiondim7/configs+calvin_abc+b16+lr-1e-05+lora-r64+dropout-0.0--image_aug--VLA-Adapter--calvin--actiondim7--65000_chkpt/config.json.back.20260506_104004
+Updated config.json at: /home/sizhe/video-prediction-policy/external_toolkits/VLA-Adapter/outputs_actiondim7/configs+calvin_abc+b16+lr-1e-05+lora-r64+dropout-0.0--image_aug--VLA-Adapter--calvin--actiondim7--65000_chkpt/config.json
+Changes made:
+  - Set AutoConfig to "configuration_prismatic.OpenVLAConfig"
+  - Set AutoModelForVision2Seq to "modeling_prismatic.OpenVLAForActionPrediction"
+/home/sizhe/video-prediction-policy/external_toolkits/VLA-Adapter/outputs_actiondim7/configs+calvin_abc+b16+lr-1e-05+lora-r64+dropout-0.0--image_aug--VLA-Adapter--calvin--actiondim7--65000_chkpt
+05/06 [10:40:04] WARNING  | >> Expected                modeling_prismatic.py:347
+                          `transformers==4.40.1` and                            
+                          `tokenizers==0.19.1` but got                          
+                          `transformers==4.47.0` and                            
+                          `tokenizers==0.21.4`; there                           
+                          might be inference-time                               
+                          regressions due to                                    
+                          dependency changes. If in                             
+                          doubt, pleaseuse the above                            
+                          versions.                                             
+/opt/conda/envs/taps2/lib/python3.10/site-packages/torch/_utils.py:776: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+INFO:     Started server process [878801]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8002 (Press CTRL+C to quit)
+WARNING: No local dataset_statistics.json file found for current checkpoint.
+You can ignore this if you are loading the base VLA (i.e. not fine-tuned) checkpoint.Otherwise, you may run into errors when trying to call `predict_action()` due to an absent `unnorm_key`.
+Loaded model: <class 'prismatic.extern.hf.modeling_prismatic.OpenVLAForActionPrediction_SP'>
+Init model success
+Load model success
+get request with instruction move to target
+model device: None
+raw scores (4, 10, 1)
+get output!: [0.064 0.064 0.064 0.064]
+INFO:     127.0.0.1:57866 - "POST /step HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [878801]

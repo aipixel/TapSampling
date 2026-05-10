@@ -1,0 +1,24 @@
+datasets:
+  lang_dataset:
+    _target_: sp_datasets.success_percent_dataset.ExtendedDiskDatasetSP
+    datasets_dir: ${root_data_dir}/training
+    key: "lang"
+    save_format: "npz"
+    lang_folder: ${lang_folder}
+    obs_space: ${datamodule.observation_space}
+    batch_size: ${batch_size}
+    min_window_size: ${min_window_size}
+    max_window_size: ${max_window_size}
+    num_workers: ${num_workers}
+    skip_frames: 1
+    geometric_p_value: 0.1
+    window_sampling_strategy: ${window_sampling_strategy}
+    action_seq_len: ${act_seq_len}
+    obs_seq_len: ${obs_seq_len}
+
+observation_space:
+  rgb_obs: ["rgb_static", "rgb_gripper"]
+  depth_obs: []
+  state_obs: ["robot_obs"]
+  actions: ["rel_actions"]
+  language: ["language"]
