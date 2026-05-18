@@ -2,9 +2,9 @@
 <div align="center">
 <h2><center>[ICML 2026] TapSampling: Inference-Time Sampling with a Task-Progress-Understanding Verifier for Robotic Manipulation </h2>
 
-[Sizhe Zhao<sup>1</sup>](), [Shengping Zhang<sup>1✉️</sup>](https://homepage.hit.edu.cn/zhangshengping),  [Shuo Yang<sup>1</sup>](), [Weiyu Zhao<sup>1</sup>](https://although-not-but.github.io/weiyu.github.io/), [Shuigen Wang<sup>2</sup>](), [Xiangyang Ji<sup>3</sup>]()
+[Sizhe Zhao<sup>1</sup>](), [Shengping Zhang<sup>1,2✉️</sup>](https://homepage.hit.edu.cn/zhangshengping),  [Shuo Yang<sup>1</sup>](), [Weiyu Zhao<sup>1</sup>](https://although-not-but.github.io/weiyu.github.io/), [Shuigen Wang<sup>3</sup>](), [Xiangyang Ji<sup>4</sup>]()
 
-1 Harbin Institute of Technology,  2 Iray Technology co., Ltd.,  3. Tsinghua University
+1 Harbin Institute of Technology,  2 Harbin Institute of Technology (Weihai) Qingdao Research Institute,  3 Iray Technology co., Ltd.,  4. Tsinghua University
 
 [![Project](https://img.shields.io/badge/Project-blue?style=for-the-badge&logo=googlechrome&logoColor=white)](https://aipixel.github.io/TapSampling) [![Paper](https://img.shields.io/badge/Paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)]() [![Hugging Face Collection](https://img.shields.io/badge/Models-fcd022?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/collections/SizheZhao/tapsampling)
 
