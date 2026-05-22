@@ -39,7 +39,7 @@ bash download_data.sh ABC
 
 # Option 2: Download only the subset required for inference
 cd calvin/dataset
-bash download_part_data.sh      # TODO: Upload, Create this script!
+bash download_part_data.sh      
 ```
 
 After the download is complete, the dataset directory structure should be:
