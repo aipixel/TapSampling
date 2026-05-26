@@ -7,7 +7,7 @@
 1 Harbin Institute of Technology,  2 Harbin Institute of Technology (Weihai) Qingdao Research Institute,  
 3 Iray Technology co., Ltd.,  4. Tsinghua University
 
-[![Project](https://img.shields.io/badge/Project-blue?style=for-the-badge&logo=googlechrome&logoColor=white)](https://aipixel.github.io/TapSampling) [![Paper](https://img.shields.io/badge/Paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)]() [![Hugging Face Collection](https://img.shields.io/badge/Models-fcd022?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/collections/SizheZhao/tapsampling)
+[![Project](https://img.shields.io/badge/Project-blue?style=for-the-badge&logo=googlechrome&logoColor=white)](https://aipixel.github.io/TapSampling) [![Paper](https://img.shields.io/badge/Paper-A42C25?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2605.25547) [![Hugging Face Collection](https://img.shields.io/badge/Models-fcd022?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/collections/SizheZhao/tapsampling)
 
 </div>
 
