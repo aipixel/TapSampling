@@ -20,6 +20,6 @@ nohup env CUDA_VISIBLE_DEVICES="0" \
     --selection_threshold 0.08 \
     --calvin_abc_dir /home/sizhe/clear_code/calvin/dataset/task_ABC_D \
     --verifier_calvin_path "../calvin" \
-    --verifier_checkpoint "../tapsampling/official_chekpoint/last" \
+    --verifier_checkpoint "../tapsampling/official_checkpoint/last" \
     --eval_save_dir ./evaluation_logs/vae_4_24_weigth \
-    > ../logs/vae_4_24_weigth.log 2>&1 &
+    > ./logs/vae_4_24_weigth.log 2>&1 &
